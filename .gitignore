@@ -1,0 +1,6 @@
+*.csproj
+*.sln
+
+scorebug/.vs/
+scorebug/obj/
+scorebug/Properties/
