@@ -81,20 +81,20 @@
         <Image x:Name="ImageAway" HorizontalAlignment="Right" Margin="0,42.333,714,0" Width="40.25" Source="away.png" VerticalAlignment="Top" Height="32.668"/>
         <Border x:Name="TimeoutContainer" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="46,33,0,0" VerticalAlignment="Top" Width="340">
             <Grid>
-                <Border x:Name="TimeoutsHome" BorderThickness="1" HorizontalAlignment="Left" Height="11.578" Margin="472.333,44.977,-188.666,-36.555" VerticalAlignment="Top" Width="54.333" Background="#FF0F0F0F" CornerRadius="4">
+                <Border x:Name="TimeoutsHome" BorderThickness="1" HorizontalAlignment="Left" Height="11.578" Margin="428.777,44.977,-172.443,-36.555" VerticalAlignment="Top" Width="81.666" Background="#FF1f1f1f" CornerRadius="4">
                     <Grid Margin="0,0,-0.417,0.833">
-                        <Border CornerRadius="2" x:Name="TimeoutHome1" Style="{DynamicResource TimeoutON}"  Margin="3,4,0,0" HorizontalAlignment="Left" Width="14" Height="4" VerticalAlignment="Top"/>
-                        <Border CornerRadius="2" x:Name="TimeoutHome2" Style="{DynamicResource TimeoutON}"  Margin="19,4,0,0" HorizontalAlignment="Left" Width="14" Height="4" VerticalAlignment="Top"/>
-                        <Border CornerRadius="2" x:Name="TimeoutHome3" Style="{DynamicResource TimeoutON}"  Margin="35.32,3.908,0,0" HorizontalAlignment="Left" Width="14" Height="4.476" VerticalAlignment="Top"/>
+                        <Border CornerRadius="2" x:Name="TimeoutHome1" Style="{DynamicResource TimeoutON}"  Margin="3,2.5,0,0" HorizontalAlignment="Left" Width="20" Height="4" VerticalAlignment="Top"/>
+                        <Border CornerRadius="2" x:Name="TimeoutHome2" Style="{DynamicResource TimeoutON}"  Margin="29,2.5,0,0" HorizontalAlignment="Left" Width="20" Height="4" VerticalAlignment="Top"/>
+                        <Border CornerRadius="2" x:Name="TimeoutHome3" Style="{DynamicResource TimeoutON}"  Margin="55.32,2.5,0,0" HorizontalAlignment="Left" Width="20" Height="4" VerticalAlignment="Top"/>
                     </Grid>
                 </Border>
 
 
-                <Border x:Name="TimeoutsAway" BorderThickness="1" HorizontalAlignment="Right" Height="11.578" Margin="0,44.977,86.167,-36.555" VerticalAlignment="Top" Width="54.333" Background="#FF0F0F0F" CornerRadius="4">
+                <Border x:Name="TimeoutsAway" BorderThickness="1" Height="11.578" Margin="149.722,44.977,107.028,-36.555" VerticalAlignment="Top" Background="#FF1f1f1f" CornerRadius="4">
                     <Grid Margin="0,0,-0.417,0.833">
-                        <Border CornerRadius="2" x:Name="TimeoutAway1" Style="{DynamicResource TimeoutON}"  Margin="3.487,3.908,0,0" HorizontalAlignment="Left" Width="14" Height="4.476" VerticalAlignment="Top"/>
-                        <Border CornerRadius="2" x:Name="TimeoutAway2" Style="{DynamicResource TimeoutON}"  Margin="19.425,3.908,0,0" HorizontalAlignment="Left" Width="14" Height="4.476" VerticalAlignment="Top"/>
-                        <Border CornerRadius="2" x:Name="TimeoutAway3" Style="{DynamicResource TimeoutOFF}"  Margin="35.32,3.908,0,0" HorizontalAlignment="Left" Width="14" Height="4.476" VerticalAlignment="Top"/>
+                        <Border CornerRadius="2" x:Name="TimeoutAway1" Style="{DynamicResource TimeoutON}"  Margin="3.487,2.5,0,0" HorizontalAlignment="Left" Width="20" Height="4" VerticalAlignment="Top"/>
+                        <Border CornerRadius="2" x:Name="TimeoutAway2" Style="{DynamicResource TimeoutON}"  Margin="29.425,2.5,0,0" HorizontalAlignment="Left" Width="20" Height="4" VerticalAlignment="Top"/>
+                        <Border CornerRadius="2" x:Name="TimeoutAway3" Style="{DynamicResource TimeoutOFF}"  Margin="55.32,2.5,0,0" HorizontalAlignment="Left" Width="20" Height="4" VerticalAlignment="Top"/>
                     </Grid>
                 </Border>
             </Grid>
