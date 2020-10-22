@@ -32,7 +32,7 @@
 
     <Grid x:Name="Panel" MinWidth="950"  MaxWidth="813" Margin="0,3,0,0" Height="110" VerticalAlignment="Top" HorizontalAlignment="Stretch">
         <Border x:Name="Scoreboard" Height="110" VerticalAlignment="Top" HorizontalAlignment="Left" Width="950">
-            <Image Source="palive.png" Tag="palive.png" Stretch="Fill" />
+            <Image Source="scorebug.png" Tag="scorebug.png" Stretch="Fill" />
         </Border>
         <Border>
             <Label Content="Text us at 501-570-6464" Background="Black" Foreground="#FF9A9898" HorizontalAlignment="Right" Width="177.5" FontFamily="Verdana" Margin="0,16.5,271.5,0" FontWeight="Bold" Height="24" VerticalAlignment="Top"/>
@@ -98,6 +98,12 @@
                     </Grid>
                 </Border>
             </Grid>
+        </Border>
+        <Border x:Name="TouchdownContainer">
+            <Image x:Name="touchdownImage" Source="touchdown.png" Tag="touchdown.png" Grid.RowSpan="1" Height="Auto" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
+        </Border>
+        <Border x:Name="FlagContainer">
+            <Image x:Name="flagImage" Source="flag.png" Tag="flag.png" Grid.RowSpan="1" Height="Auto" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
         </Border>
     </Grid>
 </UserControl>
