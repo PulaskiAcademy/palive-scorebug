@@ -8,7 +8,7 @@
 
         <ResourceDictionary>
             <LinearGradientBrush x:Key="ColorTimeoutsON">
-                <GradientStop Color="Yellow"/>
+                <GradientStop Color="#ccFFFF00"/>
             </LinearGradientBrush>
 
             <LinearGradientBrush x:Key="ColorTimeoutsOFF">
@@ -51,6 +51,7 @@
         <Border x:Name="TimeContainer" Margin="0,0,58.334,3.499" HorizontalAlignment="Right" Height="31.5" VerticalAlignment="Bottom" Width="184">
             <Label x:Name="Time" Content="15:00" Foreground="White" FontFamily="Verdana" FontWeight="Bold" FontSize="16" Height="26.75" Margin="82.75,-21.087,36.5,0" VerticalAlignment="Top"/>
         </Border>
+        <Border x:Name="LineBetweenTimeAndDown" BorderThickness="1" BorderBrush="#55FFFFFF" Margin="0,0,36,26.666" Height="1.583" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="117.5"></Border>
         <Rectangle Fill="{DynamicResource AwayColor}" HorizontalAlignment="Left" Margin="192.25,41,0,34" Stroke="Black" Width="275.75"/>
         <Rectangle x:Name="awayScoreShade" Fill="#3F000000" HorizontalAlignment="Left" Margin="415.25,41,0,34" Stroke="Black" Width="52.75"/>
         <Rectangle x:Name="HomeColor" Fill="{DynamicResource HomeColor}" HorizontalAlignment="Right" Margin="0,41,195.375,34" Stroke="Black" Width="286.625"/>
