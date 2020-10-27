@@ -7,3 +7,5 @@ scorebug/Properties/
 scorebug/bin/
 
 *.psd
+
+*.db
