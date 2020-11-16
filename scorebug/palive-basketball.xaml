@@ -1,0 +1,123 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="181.207" Width="957.5">
+    <UserControl.Resources>
+
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="ColorTimeoutsON">
+                <GradientStop Color="#ccFFFF00"/>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="ColorTimeoutsOFF">
+                <GradientStop Color="#333333"/>
+            </LinearGradientBrush>
+
+            <Style x:Key="TimeoutON" TargetType="Shape">
+                <Setter Property="Fill" Value="{DynamicResource ColorTimeoutsON}"></Setter>
+            </Style>
+            <Style x:Key="TimeoutOFF" TargetType="Shape">
+                <Setter Property="Fill" Value="{DynamicResource ColorTimeoutsOFF}"></Setter>
+            </Style>
+
+            <!-- Took a guess at what a style might be named. -->
+            <Style x:Key="BonusON" TargetType="Shape">
+                <Setter Property="Visibility" Value="Visible"></Setter>
+            </Style>
+            <Style x:Key="BonusOFF" TargetType="Shape">
+                <Setter Property="Visibility" Value="Hidden"></Setter>
+            </Style>
+
+            <Thickness x:Key="Thickness1">0,42.333,21.25,15.449</Thickness>
+            <Brush x:Key="AwayColor">#FF013668</Brush>
+            <Brush x:Key="HomeColor">#FFf83441</Brush>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid x:Name="Panel" MinWidth="950"  MaxWidth="813" Margin="0,3,0,0" Height="110" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+        <Border x:Name="Scoreboard" Height="110" VerticalAlignment="Top" HorizontalAlignment="Left" Width="950">
+            <Image Source="scorebug.png" Tag="scorebug.png" Stretch="Fill" />
+        </Border>
+
+        <Border x:Name="PeriodContainer" Margin="{DynamicResource Thickness1}" HorizontalAlignment="Right" Width="78.25" >
+            <Label x:Name="Period" Content="2ND" HorizontalContentAlignment="Right" Background="Black" Foreground="#FFA6A1A1" FontFamily="Verdana" FontSize="16" FontWeight="Bold" VerticalAlignment="Top" Height="26.758" Margin="0,12,10,0"/>
+        </Border>
+        <Image x:Name="Image1" Margin="1.5,54.551,759.75,0" Source="sponsor.png" Tag="sponsor.png" Grid.RowSpan="1" Height="Auto" d:LayoutOverrides="VerticalAlignment"/>
+        <Border x:Name="TimeContainer" Margin="0,0,58.334,3.499" HorizontalAlignment="Right" Height="31.5" VerticalAlignment="Bottom" Width="184">
+            <Label x:Name="Time" Content="15:00" Foreground="White" FontFamily="Verdana" FontWeight="Bold" FontSize="16" Height="26.75" Margin="82.75,-21.087,36.5,0" VerticalAlignment="Top"/>
+        </Border>
+        <Border x:Name="LineBetweenTimeAndDown" BorderThickness="1" BorderBrush="#55FFFFFF" Margin="0,0,36,26.666" Height="1.583" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="117.5"></Border>
+        <Rectangle x:Name="awayColor" Fill="{DynamicResource AwayColor}" HorizontalAlignment="Left" Margin="192.25,41,0,34" Stroke="Black" Width="275.75"/>
+        <Rectangle x:Name="awayScoreShade" Fill="#3F000000" HorizontalAlignment="Left" Margin="415.25,41,0,34" Stroke="Black" Width="52.75"/>
+        <Rectangle x:Name="homeColor" Fill="{DynamicResource HomeColor}" HorizontalAlignment="Right" Margin="0,41,195.375,34" Stroke="Black" Width="286.625"/>
+        <Rectangle x:Name="homeScoreShade" Fill="#3F000000" HorizontalAlignment="Right" Margin="0,41,195.312,34" Stroke="Black" Width="58.126"/>
+        <Label x:Name="ScoreAway" Content="0" Margin="416.666,39,0,34.999" HorizontalAlignment="Left" Width="51.334" HorizontalContentAlignment="Center" Foreground="White" FontFamily="Verdana" FontWeight="Bold" FontSize="21.333"/>
+        <Label x:Name="ScoreHome" Content="99" Margin="0,39,195.333,34.999" HorizontalAlignment="Right" Width="58.001" HorizontalContentAlignment="Center" Foreground="White" FontFamily="Verdana" FontWeight="Bold" FontSize="21.333"/>
+        <Label x:Name="TeamAwayFull" Content="Away" Margin="219.96,40.5,0,33.499" HorizontalAlignment="Left" Width="215.161" Foreground="White" FontFamily="Verdana" FontSize="21.333" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="0.8"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="TeamHomeFull" Content="Home" Margin="0,39,238.926,34.999" HorizontalAlignment="Right" Width="217.314" Foreground="White" FontFamily="Verdana" FontWeight="Bold" FontSize="21.333" d:LayoutOverrides="HorizontalAlignment" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="0.8"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Image x:Name="ImageHome" HorizontalAlignment="Right" Margin="0,42.333,432.833,0" Width="40.25" Source="home.png" VerticalAlignment="Top" Height="32.668"/>
+        <Image x:Name="ImageAway" HorizontalAlignment="Right" Margin="0,42.333,714,0" Width="40.25" Source="away.png" VerticalAlignment="Top" Height="32.668"/>
+        <Border x:Name="FoulsContainer">
+            <Grid>
+                <Rectangle x:Name="FoulsAway1" Style="{DynamicResource BonusOFF}" Margin="42,10,0,0" HorizontalAlignment="Left" Width="54.5" Height="39" VerticalAlignment="Top" Fill="Green" />
+                <Rectangle x:Name="FoulsAway2" Style="{DynamicResource BonusOFF}" Margin="42,10,0,0" HorizontalAlignment="Left" Width="54.5" Height="39" VerticalAlignment="Top" Fill="Green" />
+                <Rectangle x:Name="FoulsAway3" Style="{DynamicResource BonusOFF}" Margin="42,10,0,0" HorizontalAlignment="Left" Width="54.5" Height="39" VerticalAlignment="Top" Fill="BurlyWood" />
+                <Rectangle x:Name="FoulsAway4" Style="{DynamicResource BonusOFF}" Margin="42,10,0,0" HorizontalAlignment="Left" Width="54.5" Height="39" VerticalAlignment="Top" Fill="Blue" />
+                <Rectangle x:Name="FoulsAway5" Style="{DynamicResource BonusOFF}" Margin="42,10,0,0" HorizontalAlignment="Left" Width="54.5" Height="39" VerticalAlignment="Top" Fill="Yellow" />
+                <Rectangle x:Name="FoulsAway6" Style="{DynamicResource BonusOFF}" Margin="42,10,0,0" HorizontalAlignment="Left" Width="54.5" Height="39" VerticalAlignment="Top" Fill="Orange" />
+                <Rectangle x:Name="FoulsAway7" Style="{DynamicResource BonusOFF}" Margin="42,10,0,0" HorizontalAlignment="Left" Width="54.5" Height="39" VerticalAlignment="Top" Fill="Red" />
+                <Rectangle x:Name="FoulsAway8" Style="{DynamicResource BonusOFF}" Margin="42,10,0,0" HorizontalAlignment="Left" Width="54.5" Height="39" VerticalAlignment="Top" Fill="Red" />
+                <Rectangle x:Name="FoulsAway9" Style="{DynamicResource BonusOFF}" Margin="42,10,0,0" HorizontalAlignment="Left" Width="54.5" Height="39" VerticalAlignment="Top" Fill="Red" />
+                <Rectangle x:Name="FoulsAway10" Style="{DynamicResource BonusOFF}" Margin="42,10,0,0" HorizontalAlignment="Left" Width="54.5" Height="39" VerticalAlignment="Top" Fill="Purple" />
+            </Grid>
+        </Border>
+        <Border x:Name="TimeoutContainer" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="46,33,0,0" VerticalAlignment="Top" Width="340">
+            <Grid Margin="-7.004,0,7.004,0">
+                <Border x:Name="TimeoutsHome" BorderThickness="1" HorizontalAlignment="Left" Height="11.578" Margin="428.777,44.977,-274.776,-36.555" VerticalAlignment="Top" Width="183.999">
+                    <Grid>
+                        <Rectangle x:Name="TimeoutHome1" Style="{DynamicResource TimeoutON}" HorizontalAlignment="Left" Margin="0,0,0,5" Width="17" RenderTransformOrigin="0.5,0.5"/>
+                        <Rectangle x:Name="TimeoutHome2" Style="{DynamicResource TimeoutON}" HorizontalAlignment="Left" Margin="20,0,0,5" Width="17" RenderTransformOrigin="0.5,0.5"/>
+                        <Rectangle x:Name="TimeoutHome3" Style="{DynamicResource TimeoutON}" HorizontalAlignment="Left" Margin="40,0,0,5" Width="17" RenderTransformOrigin="0.5,0.5"/>
+                        <Rectangle x:Name="TimeoutHome4" Style="{DynamicResource TimeoutON}" Margin="60,0,0,5" RenderTransformOrigin="0.5,0.5" Width="17" HorizontalAlignment="Left" d:LayoutOverrides="Width"/>
+                        <Rectangle x:Name="TimeoutHome5" Style="{DynamicResource TimeoutON}" Margin="80,0,0,5" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="17"/>
+                        <Rectangle x:Name="TimeoutHome6" Style="{DynamicResource TimeoutOFF}" HorizontalAlignment="Left" Margin="100,0,0,5" Width="17" RenderTransformOrigin="0.5,0.5"/>
+                        <Rectangle x:Name="TimeoutHome7" Style="{DynamicResource TimeoutOFF}" HorizontalAlignment="Left" Margin="120,0,0,5" Width="17" RenderTransformOrigin="0.5,0.5"/>
+                    </Grid>
+                </Border>
+
+
+                <Border x:Name="TimeoutsAway" BorderThickness="1" Height="11.578" Margin="145.418,44.977,7.749,-36.555" VerticalAlignment="Top">
+                    <Grid Margin="0,0,0,0">
+                        <Rectangle x:Name="TimeoutAway1" Style="{DynamicResource TimeoutON}" HorizontalAlignment="Left" Margin="0,0,0,5" Width="17" RenderTransformOrigin="0.5,0.5"/>
+                        <Rectangle x:Name="TimeoutAway2" Style="{DynamicResource TimeoutON}" HorizontalAlignment="Left" Margin="20,0,0,5" Width="17" RenderTransformOrigin="0.5,0.5"/>
+                        <Rectangle x:Name="TimeoutAway3" Style="{DynamicResource TimeoutON}" HorizontalAlignment="Left" Margin="40,0,0,5" Width="17" RenderTransformOrigin="0.5,0.5"/>
+                        <Rectangle x:Name="TimeoutAway4" Style="{DynamicResource TimeoutON}" Margin="60,0,0,5" RenderTransformOrigin="0.5,0.5" Width="17" HorizontalAlignment="Left" d:LayoutOverrides="Width"/>
+                        <Rectangle x:Name="TimeoutAway5" Style="{DynamicResource TimeoutON}" Margin="80,0,0,5" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="17"/>
+                        <Rectangle x:Name="TimeoutAway6" Style="{DynamicResource TimeoutOFF}" HorizontalAlignment="Left" Margin="100,0,0,5" Width="17" RenderTransformOrigin="0.5,0.5"/>
+                        <Rectangle x:Name="TimeoutAway7" Style="{DynamicResource TimeoutOFF}" HorizontalAlignment="Left" Margin="120,0,0,5" Width="17" RenderTransformOrigin="0.5,0.5"/>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>
