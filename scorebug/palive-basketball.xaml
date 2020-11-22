@@ -75,6 +75,7 @@
         <Border x:Name="PeriodContainer" Margin="{DynamicResource Thickness1}" HorizontalAlignment="Right" Width="78.25" >
             <Label x:Name="Period" Content="2ND" HorizontalContentAlignment="Right" Background="Black" Foreground="#FFA6A1A1" FontFamily="Verdana" FontSize="16" FontWeight="Bold" VerticalAlignment="Top" Height="26.758" Margin="0,12,10,0"/>
         </Border>
+        <Image x:Name="Image1" Margin="1.5,54.551,759.75,0" Source="sponsor.png" Tag="sponsor.png" Grid.RowSpan="1" Height="Auto" d:LayoutOverrides="VerticalAlignment"/>
         <Border x:Name="TimeContainer" Margin="0,0,58.334,3.499" HorizontalAlignment="Right" Height="31.5" VerticalAlignment="Bottom" Width="184">
             <Label x:Name="Time" Content="15:00" Foreground="White" FontFamily="Verdana" FontWeight="Bold" FontSize="16" Height="26.75" Margin="82.75,-21.087,36.5,0" VerticalAlignment="Top"/>
         </Border>
