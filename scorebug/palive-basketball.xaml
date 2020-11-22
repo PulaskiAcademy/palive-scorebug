@@ -69,7 +69,7 @@
 
     <Grid x:Name="Panel" MinWidth="950"  MaxWidth="813" Margin="0,3,0,0" Height="110" VerticalAlignment="Top" HorizontalAlignment="Stretch">
         <Border x:Name="Scoreboard" Height="110" VerticalAlignment="Top" HorizontalAlignment="Left" Width="950">
-            <Image Source="scorebug.png" Tag="scorebug.png" Stretch="Fill" />
+            <Image Source="scorebug-basketball.png" Tag="scorebug-basketball.png" Stretch="Fill" />
         </Border>
 
         <Border x:Name="PeriodContainer" Margin="{DynamicResource Thickness1}" HorizontalAlignment="Right" Width="78.25" >
