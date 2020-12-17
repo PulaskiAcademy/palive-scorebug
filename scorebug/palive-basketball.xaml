@@ -65,26 +65,26 @@
         <Rectangle x:Name="BlackBackingForFouls" Height="24.999" Margin="334.5,0,190.25,10" VerticalAlignment="Bottom" Fill="{DynamicResource ColorFouls1}" d:IsHidden="True"/>
         <Border x:Name="FoulsContainer" Margin="126,4,-118,-4">
             <Grid>
-                <Rectangle x:Name="FoulsAway10" Style="{DynamicResource StyleFouls1}" Margin="241.25,75.167,0,0" HorizontalAlignment="Left" Width="45" Height="11" VerticalAlignment="Top"  />
-                <Rectangle x:Name="FoulsAway9" Style="{DynamicResource StyleFouls1}" Margin="241.25,91.167,0,0" HorizontalAlignment="Left" Width="36" Height="11" VerticalAlignment="Top" />
-                <Rectangle x:Name="FoulsAway8" Style="{DynamicResource StyleFouls1}" Margin="241.25,93.667,0,0" HorizontalAlignment="Left" Width="36" Height="11" VerticalAlignment="Top" />
-                <Rectangle x:Name="FoulsAway7" Style="{DynamicResource StyleFouls1}" Margin="241.25,73.854,0,0" HorizontalAlignment="Left" Width="36" Height="11" VerticalAlignment="Top"  />
-                <Rectangle x:Name="FoulsAway6" Style="{DynamicResource StyleFouls1}" Margin="190,113,0,-14" HorizontalAlignment="Left" Width="1" Height="1" VerticalAlignment="Top"  />
-                <Rectangle x:Name="FoulsAway5" Style="{DynamicResource StyleFouls1}" Margin="190999,113,0,-14" HorizontalAlignment="Left" Width="1" Height="1" VerticalAlignment="Top"  />
-                <Rectangle x:Name="FoulsAway4" Style="{DynamicResource StyleFouls1}" Margin="190,113,0,-14" HorizontalAlignment="Left" Width="1" Height="1" VerticalAlignment="Top"  />
-                <Rectangle x:Name="FoulsAway3" Style="{DynamicResource StyleFouls1}" Margin="190,113,0,-14" HorizontalAlignment="Left" Width="1" Height="1" VerticalAlignment="Top"  />
-                <Rectangle x:Name="FoulsAway2" Style="{DynamicResource StyleFouls1}" Margin="190,113,0,-14" HorizontalAlignment="Left" Width="1" Height="1" VerticalAlignment="Top"   />
-                <Rectangle x:Name="FoulsAway1" Style="{DynamicResource StyleFouls1}" Margin="190,113,0,-14" HorizontalAlignment="Left" Width="1" Height="1" VerticalAlignment="Top"  />
-                <Rectangle x:Name="FoulsHome10" Style="{DynamicResource StyleFouls1}" Margin="0,75.167,374.75,0" HorizontalAlignment="Right" Width="45" Height="11" VerticalAlignment="Top"  />
-                <Rectangle x:Name="FoulsHome9" Style="{DynamicResource StyleFouls1}" Margin="0,75.167,383.75,0" HorizontalAlignment="Right" Width="36" Height="11" VerticalAlignment="Top" />
-                <Rectangle x:Name="FoulsHome8" Style="{DynamicResource StyleFouls1}" Margin="0,75.167,383.75,0" HorizontalAlignment="Right" Width="36" Height="11" VerticalAlignment="Top" />
-                <Rectangle x:Name="FoulsHome7" Style="{DynamicResource StyleFouls1}" Margin="0,73.854,383.75,0" HorizontalAlignment="Right" Width="36" Height="11" VerticalAlignment="Top"  />
-                <Rectangle x:Name="FoulsHome6" Style="{DynamicResource StyleFouls1}" Margin="0,110,430.604,-14" HorizontalAlignment="Right" Width="1" Height="1" VerticalAlignment="Top"  />
-                <Rectangle x:Name="FoulsHome5" Style="{DynamicResource StyleFouls1}" Margin="0,110,430.604,-14" HorizontalAlignment="Right" Width="1" Height="1" VerticalAlignment="Top"  />
-                <Rectangle x:Name="FoulsHome4" Style="{DynamicResource StyleFouls1}" Margin="0,110,430.604,-14" HorizontalAlignment="Right" Width="1" Height="1" VerticalAlignment="Top"  />
-                <Rectangle x:Name="FoulsHome3" Style="{DynamicResource StyleFouls1}" Margin="0,110,430.604,-14" HorizontalAlignment="Right" Width="1" Height="1" VerticalAlignment="Top"  />
-                <Rectangle x:Name="FoulsHome2" Style="{DynamicResource StyleFouls1}" Margin="0,110,430.604,-14" HorizontalAlignment="Right" Width="1" Height="1" VerticalAlignment="Top"   />
-                <Rectangle x:Name="FoulsHome1" Style="{DynamicResource StyleFouls1}" Margin="0,110,430.604,-14" HorizontalAlignment="Right" Width="1" Height="1" VerticalAlignment="Top"  />
+                <Rectangle x:Name="FoulsHome10" Style="{DynamicResource StyleFouls1}" Margin="241.25,75.167,0,0" HorizontalAlignment="Left" Width="45" Height="11" VerticalAlignment="Top"  />
+                <Rectangle x:Name="FoulsHome9" Style="{DynamicResource StyleFouls1}" Margin="241.25,91.167,0,0" HorizontalAlignment="Left" Width="36" Height="11" VerticalAlignment="Top" />
+                <Rectangle x:Name="FoulsHome8" Style="{DynamicResource StyleFouls1}" Margin="241.25,93.667,0,0" HorizontalAlignment="Left" Width="36" Height="11" VerticalAlignment="Top" />
+                <Rectangle x:Name="FoulsHome7" Style="{DynamicResource StyleFouls1}" Margin="241.25,73.854,0,0" HorizontalAlignment="Left" Width="36" Height="11" VerticalAlignment="Top"  />
+                <Rectangle x:Name="FoulsHome6" Style="{DynamicResource StyleFouls1}" Margin="190,113,0,-14" HorizontalAlignment="Left" Width="1" Height="1" VerticalAlignment="Top"  />
+                <Rectangle x:Name="FoulsHome5" Style="{DynamicResource StyleFouls1}" Margin="190999,113,0,-14" HorizontalAlignment="Left" Width="1" Height="1" VerticalAlignment="Top"  />
+                <Rectangle x:Name="FoulsHome4" Style="{DynamicResource StyleFouls1}" Margin="190,113,0,-14" HorizontalAlignment="Left" Width="1" Height="1" VerticalAlignment="Top"  />
+                <Rectangle x:Name="FoulsHome3" Style="{DynamicResource StyleFouls1}" Margin="190,113,0,-14" HorizontalAlignment="Left" Width="1" Height="1" VerticalAlignment="Top"  />
+                <Rectangle x:Name="FoulsHome2" Style="{DynamicResource StyleFouls1}" Margin="190,113,0,-14" HorizontalAlignment="Left" Width="1" Height="1" VerticalAlignment="Top"   />
+                <Rectangle x:Name="FoulsHome1" Style="{DynamicResource StyleFouls1}" Margin="190,113,0,-14" HorizontalAlignment="Left" Width="1" Height="1" VerticalAlignment="Top"  />
+                <Rectangle x:Name="FoulsAway10" Style="{DynamicResource StyleFouls1}" Margin="0,75.167,374.75,0" HorizontalAlignment="Right" Width="45" Height="11" VerticalAlignment="Top"  />
+                <Rectangle x:Name="FoulsAway9" Style="{DynamicResource StyleFouls1}" Margin="0,75.167,383.75,0" HorizontalAlignment="Right" Width="36" Height="11" VerticalAlignment="Top" />
+                <Rectangle x:Name="FoulsAway8" Style="{DynamicResource StyleFouls1}" Margin="0,75.167,383.75,0" HorizontalAlignment="Right" Width="36" Height="11" VerticalAlignment="Top" />
+                <Rectangle x:Name="FoulsAway7" Style="{DynamicResource StyleFouls1}" Margin="0,73.854,383.75,0" HorizontalAlignment="Right" Width="36" Height="11" VerticalAlignment="Top"  />
+                <Rectangle x:Name="FoulsAway6" Style="{DynamicResource StyleFouls1}" Margin="0,110,430.604,-14" HorizontalAlignment="Right" Width="1" Height="1" VerticalAlignment="Top"  />
+                <Rectangle x:Name="FoulsAway5" Style="{DynamicResource StyleFouls1}" Margin="0,110,430.604,-14" HorizontalAlignment="Right" Width="1" Height="1" VerticalAlignment="Top"  />
+                <Rectangle x:Name="FoulsAway4" Style="{DynamicResource StyleFouls1}" Margin="0,110,430.604,-14" HorizontalAlignment="Right" Width="1" Height="1" VerticalAlignment="Top"  />
+                <Rectangle x:Name="FoulsAway3" Style="{DynamicResource StyleFouls1}" Margin="0,110,430.604,-14" HorizontalAlignment="Right" Width="1" Height="1" VerticalAlignment="Top"  />
+                <Rectangle x:Name="FoulsAway2" Style="{DynamicResource StyleFouls1}" Margin="0,110,430.604,-14" HorizontalAlignment="Right" Width="1" Height="1" VerticalAlignment="Top"   />
+                <Rectangle x:Name="FoulsAway1" Style="{DynamicResource StyleFouls1}" Margin="0,110,430.604,-14" HorizontalAlignment="Right" Width="1" Height="1" VerticalAlignment="Top"  />
             </Grid>
         </Border>
         <Border x:Name="Scoreboard" Height="110" VerticalAlignment="Top" HorizontalAlignment="Left" Width="950">
