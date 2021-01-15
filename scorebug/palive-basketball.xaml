@@ -31,7 +31,7 @@
 
             <Thickness x:Key="Thickness1">0,42.333,21.25,15.449</Thickness>
             <Brush x:Key="AwayColor">#FF013668</Brush>
-            <Brush x:Key="HomeColor">#FFf83441</Brush>
+            <Brush x:Key="HomeColor">#FFFFFFFF</Brush>
 
             <RadialGradientBrush x:Key="ColorFouls1">
                 <GradientStop Color="#FF000000" Offset="0"/>
