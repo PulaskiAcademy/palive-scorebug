@@ -61,10 +61,11 @@
     </UserControl.Resources>
 
     <Grid x:Name="Panel" MinWidth="950"  MaxWidth="813" Margin="0,3,0,0" Height="110" VerticalAlignment="Top" HorizontalAlignment="Stretch">
-        <Rectangle x:Name="BlackBackingForFouls" Height="24.999" Margin="334.5,0,190.25,10" VerticalAlignment="Bottom" Fill="{DynamicResource ColorFouls1}" d:IsHidden="True"/>
-        <Border x:Name="FoulsContainer" Margin="126,4,-118,-4" d:IsHidden="True">
-            <Grid d:IsHidden="True">
-                <Rectangle x:Name="FoulsHome10" Style="{DynamicResource StyleFouls1}" Margin="241.25,75.167,0,0" HorizontalAlignment="Left" Width="45" Height="11" VerticalAlignment="Top" d:IsHidden="True"  />
+
+        <Rectangle x:Name="BlackBackingForFouls" Height="24.999" Margin="334.5,0,190.25,10" VerticalAlignment="Bottom" Fill="{DynamicResource ColorFouls1}"/>
+        <Border x:Name="FoulsContainerBonus" Margin="126,4,-118,-4">
+            <Grid>
+                <Rectangle x:Name="FoulsHome10" Style="{DynamicResource StyleFouls1}" Margin="241.25,75.167,0,0" HorizontalAlignment="Left" Width="45" Height="11" VerticalAlignment="Top"  />
                 <Rectangle x:Name="FoulsHome9" Style="{DynamicResource StyleFouls1}" Margin="241.25,91.167,0,0" HorizontalAlignment="Left" Width="36" Height="11" VerticalAlignment="Top" />
                 <Rectangle x:Name="FoulsHome8" Style="{DynamicResource StyleFouls1}" Margin="241.25,93.667,0,0" HorizontalAlignment="Left" Width="36" Height="11" VerticalAlignment="Top" />
                 <Rectangle x:Name="FoulsHome7" Style="{DynamicResource StyleFouls1}" Margin="241.25,73.854,0,0" HorizontalAlignment="Left" Width="36" Height="11" VerticalAlignment="Top"  />
@@ -154,5 +155,13 @@
             </Grid>
         </Border>
         <Image x:Name="Image1" Margin="1.5,0,3.75,0" Source="sponsor.png" Tag="sponsor.png" Grid.RowSpan="1" Height="Auto" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" d:IsHidden="True"/>
+        <Border x:Name="FoulsContainer" Margin="18,117,19,6">
+            <Grid>
+                <Label x:Name="FoulsAwayLabel" Content="Fouls:" VerticalContentAlignment="Center"  Foreground="#ffffff" HorizontalAlignment="Left" Width="39" Height="26" VerticalAlignment="Top" FontFamily="Arial" Padding="0" HorizontalContentAlignment="Center" Margin="176.25,-35.113,0,0" d:LayoutOverrides="VerticalAlignment"/>
+                <Label x:Name="FoulsAway" Content="24" VerticalContentAlignment="Center"  Foreground="#ffffff" HorizontalAlignment="Left" Width="23" Height="26" VerticalAlignment="Top" FontFamily="Arial" Padding="0" HorizontalContentAlignment="Center" Margin="211.25,-35.113,0,0" d:LayoutOverrides="VerticalAlignment"/>
+                <Label x:Name="FoulsHomeLabel" Content="Fouls:" VerticalContentAlignment="Center"  Foreground="#ffffff" Height="27" VerticalAlignment="Top" FontFamily="Arial" Padding="0" HorizontalContentAlignment="Center" Margin="450.75,-35.113,423.25,0" d:LayoutOverrides="VerticalAlignment"/>
+                <Label x:Name="FoulsHome" Content="24" VerticalContentAlignment="Center"  Foreground="#ffffff" HorizontalAlignment="Right" Width="23" Height="27" VerticalAlignment="Top" FontFamily="Arial" Padding="0" HorizontalContentAlignment="Center" Margin="0,-35.113,404.25,0" d:LayoutOverrides="VerticalAlignment"/>
+            </Grid>
+        </Border>
     </Grid>
 </UserControl>
