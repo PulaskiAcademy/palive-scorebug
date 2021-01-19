@@ -1,9 +1,9 @@
 <UserControl
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" Height="181.207" Width="957.5">
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="181.207" Width="957.5">
     <UserControl.Resources>
 
         <ResourceDictionary>
@@ -62,9 +62,9 @@
 
     <Grid x:Name="Panel" MinWidth="950"  MaxWidth="813" Margin="0,3,0,0" Height="110" VerticalAlignment="Top" HorizontalAlignment="Stretch">
         <Rectangle x:Name="BlackBackingForFouls" Height="24.999" Margin="334.5,0,190.25,10" VerticalAlignment="Bottom" Fill="{DynamicResource ColorFouls1}" d:IsHidden="True"/>
-        <Border x:Name="FoulsContainer" Margin="126,4,-118,-4">
-            <Grid>
-                <Rectangle x:Name="FoulsHome10" Style="{DynamicResource StyleFouls1}" Margin="241.25,75.167,0,0" HorizontalAlignment="Left" Width="45" Height="11" VerticalAlignment="Top"  />
+        <Border x:Name="FoulsContainer" Margin="126,4,-118,-4" d:IsHidden="True">
+            <Grid d:IsHidden="True">
+                <Rectangle x:Name="FoulsHome10" Style="{DynamicResource StyleFouls1}" Margin="241.25,75.167,0,0" HorizontalAlignment="Left" Width="45" Height="11" VerticalAlignment="Top" d:IsHidden="True"  />
                 <Rectangle x:Name="FoulsHome9" Style="{DynamicResource StyleFouls1}" Margin="241.25,91.167,0,0" HorizontalAlignment="Left" Width="36" Height="11" VerticalAlignment="Top" />
                 <Rectangle x:Name="FoulsHome8" Style="{DynamicResource StyleFouls1}" Margin="241.25,93.667,0,0" HorizontalAlignment="Left" Width="36" Height="11" VerticalAlignment="Top" />
                 <Rectangle x:Name="FoulsHome7" Style="{DynamicResource StyleFouls1}" Margin="241.25,73.854,0,0" HorizontalAlignment="Left" Width="36" Height="11" VerticalAlignment="Top"  />
@@ -87,7 +87,7 @@
             </Grid>
         </Border>
         <Border x:Name="Scoreboard" Height="110" VerticalAlignment="Top" HorizontalAlignment="Left" Width="950">
-            <Image Source="scorebug-basketball.png" Tag="scorebug-basketball.png" Stretch="Fill" />
+            <Image Source="basketball/scorebug.png" Tag="basketball/scorebug.png" Stretch="Fill" />
         </Border>
 
         <Border x:Name="PeriodContainer" Margin="{DynamicResource Thickness1}" HorizontalAlignment="Right" Width="78.25" >
@@ -123,8 +123,8 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Image x:Name="ImageHome" HorizontalAlignment="Right" Margin="0,42.333,432.833,0" Width="40.25" Source="home.png" VerticalAlignment="Top" Height="32.668"/>
-        <Image x:Name="ImageAway" HorizontalAlignment="Right" Margin="0,42.333,714,0" Width="40.25" Source="away.png" VerticalAlignment="Top" Height="32.668"/>
+        <Image x:Name="ImageHome" HorizontalAlignment="Right" Margin="0,42.333,432.833,0" Width="40.25" Source="mascots\ar-Pulaski Academy.png" VerticalAlignment="Top" Height="32.668"/>
+        <Image x:Name="ImageAway" HorizontalAlignment="Right" Margin="0,42.333,714,0" Width="40.25" Source="mascots\ar-Little Rock Christian.png" VerticalAlignment="Top" Height="32.668"/>
         <Border x:Name="TimeoutContainer" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="46,33,0,0" VerticalAlignment="Top" Width="340">
             <Grid Margin="-7.004,0,7.004,0">
                 <Border x:Name="TimeoutsHome" BorderThickness="1" HorizontalAlignment="Left" Height="11.578" Margin="428.777,44.977,-240.443,-36.555" VerticalAlignment="Top" Width="149.666">
@@ -153,6 +153,6 @@
                 </Border>
             </Grid>
         </Border>
-        <Image x:Name="Image1" Margin="1.5,0,3.75,0" Source="sponsor.png" Tag="sponsor.png" Grid.RowSpan="1" Height="Auto" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
+        <Image x:Name="Image1" Margin="1.5,0,3.75,0" Source="sponsor.png" Tag="sponsor.png" Grid.RowSpan="1" Height="Auto" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" d:IsHidden="True"/>
     </Grid>
 </UserControl>
