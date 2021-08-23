@@ -5,7 +5,6 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" Height="181.207" Width="957.5">
     <UserControl.Resources>
-
         <ResourceDictionary>
             <LinearGradientBrush x:Key="ColorTimeoutsON">
                 <GradientStop Color="#ccFFFF00"/>
@@ -27,9 +26,32 @@
             <Thickness x:Key="Thickness1">0,42.333,21.25,15.449</Thickness>
             <Brush x:Key="AwayColor">#FF013668</Brush>
             <Brush x:Key="HomeColor">#FFf83441</Brush>
+
+            <Storyboard x:Key="ScoreHomeAnimation">
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ScoreHome">
+                    <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                    <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                    <EasingDoubleKeyFrame KeyTime="0:0:1.0" Value="1"/>
+                    <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0"/>
+                    <EasingDoubleKeyFrame KeyTime="0:0:2.0" Value="1"/>
+                    <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="0"/>
+                    <EasingDoubleKeyFrame KeyTime="0:0:3.0" Value="1"/>
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="ScoreAwayAnimation">
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ScoreHome">
+                    <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                    <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                    <EasingDoubleKeyFrame KeyTime="0:0:1.0" Value="1"/>
+                    <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0"/>
+                    <EasingDoubleKeyFrame KeyTime="0:0:2.0" Value="1"/>
+                    <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="0"/>
+                    <EasingDoubleKeyFrame KeyTime="0:0:3.0" Value="1"/>
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
         </ResourceDictionary>
     </UserControl.Resources>
-
+    
     <Grid x:Name="Panel" MinWidth="950"  MaxWidth="813" Margin="0,3,0,0" Height="110" VerticalAlignment="Top" HorizontalAlignment="Stretch">
         <Rectangle x:Name="RectBackground1" Fill="Black" Margin="1.25,53.667,0.583,0.333" Stroke="Black"/>
         <Rectangle x:Name="RectBackground2" Fill="Black" Margin="191.25,40.001,193.583,31.333" Stroke="Black"/>
