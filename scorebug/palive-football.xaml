@@ -33,11 +33,11 @@
     <Grid x:Name="Panel" MinWidth="950"  MaxWidth="813" Margin="0,3,0,0" Height="110" VerticalAlignment="Top" HorizontalAlignment="Stretch">
         <Rectangle x:Name="RectBackground1" Fill="Black" Margin="1.25,53.667,0.583,0.333" Stroke="Black"/>
         <Rectangle x:Name="RectBackground2" Fill="Black" Margin="191.25,40.001,193.583,31.333" Stroke="Black"/>
-        <Border>
-            <Label x:Name="TeamRecordHome" Content="Text us at 501-570-6464" Background="Black" Foreground="#FF9A9898" HorizontalAlignment="Right" Width="177.5" FontFamily="Verdana" Margin="0,16.5,271.5,0" FontWeight="Bold" Height="24" VerticalAlignment="Top"/>
-        </Border>
-        <Border>
-            <Label x:Name="TeamRecordAway" Content="Live Fan Feedback" Margin="270.5,16.5,446.5,0" Height="24" VerticalAlignment="Top" FontFamily="Verdana" FontWeight="Bold" Background="Black" Foreground="White"/>
+        <Border x:Name="TeamRecordsContainer">
+            <Grid Margin="0,0,-0.417,0.833">
+                <Label x:Name="TeamRecordHome" Content="Text us at 501-570-6464" Background="Black" Foreground="#FF9A9898" HorizontalAlignment="Right" Width="177.5" FontFamily="Verdana" Margin="0,16.5,271.5,0" FontWeight="Bold" Height="24" VerticalAlignment="Top"/>
+                <Label x:Name="TeamRecordAway" Content="Live Fan Feedback" Margin="270.5,16.5,446.5,0" Height="24" VerticalAlignment="Top" FontFamily="Verdana" FontWeight="Bold" Background="Black" Foreground="White"/>
+            </Grid>
         </Border>
 
         <Border x:Name="QuarterContainer" Margin="{DynamicResource Thickness1}" HorizontalAlignment="Right" Width="78.25" >
