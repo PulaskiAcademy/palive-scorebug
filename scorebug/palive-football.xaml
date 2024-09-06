@@ -77,7 +77,7 @@
         <Rectangle x:Name="awayScoreShade" Fill="#3F000000" HorizontalAlignment="Left" Margin="415.25,41,0,34" Stroke="Black" Width="52.75"/>
         <Rectangle x:Name="HomeColor" Fill="{DynamicResource HomeColor}" HorizontalAlignment="Right" Margin="0,41,195.375,34" Stroke="Black" Width="286.625"/>
         <Rectangle x:Name="homeScoreShade" Fill="#3F000000" HorizontalAlignment="Right" Margin="0,41,195.312,34" Stroke="Black" Width="58.126"/>
-        <Label x:Name="ScoreAway" Content="0" Margin="416.666,39,0,34.999" HorizontalAlignment="Left" Width="51.334" HorizontalContentAlignment="Center" Foreground="White" FontFamily="Verdana" FontWeight="Bold" FontSize="21.333"/>
+        <Label x:Name="ScoreAway" Content="0" Margin="416.666,39,0,34.999" HorizontalAlignment="Left" Width="51.334" HorizontalContentAlignment="Center" Foreground="White" FontFamily="Verdana" FontWeight="Bold" FontSize="21.333" />
         <Label x:Name="ScoreHome" Content="99" Margin="0,39,195.333,34.999" HorizontalAlignment="Right" Width="58.001" HorizontalContentAlignment="Center" Foreground="White" FontFamily="Verdana" FontWeight="Bold" FontSize="21.333"/>
         <Label x:Name="TeamAwayFull" Content="Away" Margin="219.96,40.5,0,33.499" HorizontalAlignment="Left" Width="215.161" Foreground="White" FontFamily="Verdana" FontSize="21.333" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
@@ -89,7 +89,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label x:Name="TeamHomeFull" Content="Home" Margin="0,39,238.926,34.999" HorizontalAlignment="Right" Width="217.314" Foreground="White" FontFamily="Verdana" FontWeight="Bold" FontSize="21.333" d:LayoutOverrides="HorizontalAlignment" RenderTransformOrigin="0.5,0.5">
+        <Label x:Name="TeamHomeFull" Content="Home" Margin="0,39,238.926,34.999" HorizontalAlignment="Right" Width="217.314" Foreground="White" FontFamily="Verdana" FontWeight="Bold" FontSize="21.333" d:LayoutOverrides="HorizontalAlignment" RenderTransformOrigin="0.5,0.5" FontStretch="Condensed">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.8"/>
