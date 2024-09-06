@@ -99,8 +99,8 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Image x:Name="ImageHome" HorizontalAlignment="Right" Margin="0,42.333,432.833,0" Width="40.25" Source="home.png" VerticalAlignment="Top" Height="32.668"/>
-        <Image x:Name="ImageAway" HorizontalAlignment="Right" Margin="0,42.333,714,0" Width="40.25" Source="away.png" VerticalAlignment="Top" Height="32.668"/>
+        <Image x:Name="ImageHome" HorizontalAlignment="Right" Margin="0,42.333,432.833,0" Width="40.25" Source="home.png" VerticalAlignment="Middle" Height="32.668"/>
+        <Image x:Name="ImageAway" HorizontalAlignment="Right" Margin="0,42.333,714,0" Width="40.25" Source="away.png" VerticalAlignment="Middle" Height="32.668"/>
         <Border x:Name="TimeoutContainer" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="46,33,0,0" VerticalAlignment="Top" Width="340">
             <Grid>
                 <Border x:Name="TimeoutsHome" BorderThickness="1" HorizontalAlignment="Left" Height="11.578" Margin="428.777,44.977,-172.443,-36.555" VerticalAlignment="Top" Width="81.666" Background="#FF1f1f1f" CornerRadius="4">
@@ -121,6 +121,7 @@
                 </Border>
             </Grid>
         </Border>
+        <Image x:Name="Image1" Margin="1.5,0,3.75,0" Source="sponsor.png" Tag="sponsor.png" Grid.RowSpan="1" Height="Auto" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" d:IsHidden="True"/>
         <Border x:Name="TouchdownContainer" d:IsHidden="True">
             <Image x:Name="touchdownImage" Source="football/touchdown.png" Tag="football/touchdown.png" Grid.RowSpan="1" Height="Auto" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
         </Border>
