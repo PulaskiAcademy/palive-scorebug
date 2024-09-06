@@ -99,8 +99,8 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Image x:Name="ImageHome" HorizontalAlignment="Right" Margin="0,42.333,432.833,0" Width="40.25" Source="home.png" VerticalAlignment="Center" Height="32.668"/>
-        <Image x:Name="ImageAway" HorizontalAlignment="Right" Margin="0,42.333,714,0" Width="40.25" Source="away.png" VerticalAlignment="Center" Height="32.668"/>
+        <Image x:Name="ImageHome" HorizontalAlignment="Right" Margin="0,42.333,432.833,0" Width="40.25" Source="home.png" VerticalAlignment="Top" Height="32.668"/>
+        <Image x:Name="ImageAway" HorizontalAlignment="Right" Margin="0,42.333,714,0" Width="40.25" Source="away.png" VerticalAlignment="Top" Height="32.668"/>
         <Border x:Name="TimeoutContainer" BorderThickness="1" HorizontalAlignment="Left" Height="22" Margin="46,33,0,0" VerticalAlignment="Top" Width="340">
             <Grid>
                 <Border x:Name="TimeoutsHome" BorderThickness="1" HorizontalAlignment="Left" Height="11.578" Margin="428.777,44.977,-172.443,-36.555" VerticalAlignment="Top" Width="81.666" Background="#FF1f1f1f" CornerRadius="4">
