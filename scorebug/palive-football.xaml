@@ -121,7 +121,7 @@
                 </Border>
             </Grid>
         </Border>
-        <Image x:Name="SponsorImage" Margin="1.5,0,3.75,0" Source="sponsor.png" Tag="sponsor.png" Grid.RowSpan="1" Height="Auto" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" d:IsHidden="True"/>
+        <Image x:Name="SponsorImage" Margin="1.5,0,3.75,0" Source="football/sponsor.png" Tag="sponsor.png" Grid.RowSpan="1" Height="Auto" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" d:IsHidden="True"/>
         <Border x:Name="TouchdownContainer" d:IsHidden="True">
             <Image x:Name="touchdownImage" Source="football/touchdown.png" Tag="football/touchdown.png" Grid.RowSpan="1" Height="Auto" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
         </Border>
